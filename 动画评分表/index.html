@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画评分表</title>
+    <link rel="stylesheet" href="document.css">
+</head>
+<body>
+    <div class="anime-grid-box"></div>
+    </div>
+    <footer>
+    </footer>
+    <script src="anime-grid.js"></script>
+<script>
+const typeTexts = `夯
+夯
+夯
+夯
+夯
+
+顶级
+顶级
+顶级
+顶级
+顶级
+
+人上人
+人上人
+人上人
+人上人
+人上人
+
+NPC
+NPC
+NPC
+NPC
+NPC
+
+拉拉
+拉拉
+拉拉
+拉拉
+拉拉
+`;
+new AnimeGrid({
+    el: document.querySelector('.anime-grid-box'),
+    title: '动画评分表',
+    key: 'margiconch-animes-grid',
+    typeTexts,
+    col: 5,
+    row: 5,
+})
+</script>
+</body>
+</html>
